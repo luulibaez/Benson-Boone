@@ -82,8 +82,10 @@ main{
 table{
     margin-left: auto;
     margin-right: auto;
+    background-color: transparent!;
+    color: transparent!;
 }
-
+/*
 tr{
     font-size: 1.2rem;
     font-weight: bold;
@@ -101,7 +103,7 @@ td a{
     padding-right: 5px;
     padding-left: 5px;
     
-}
+} */
 
 /* HOME */
 
@@ -125,6 +127,12 @@ td a{
     max-width: 30%;
     max-height: 500px;
 }
+
+/*Merch*/
+
+.card 
+#{$prefix}card-spacer-y: #{$card-spacer-y};
+--#{$prefix}card-spacer-x: #{$card-spacer-x};
 
 /* Noticias */
 
