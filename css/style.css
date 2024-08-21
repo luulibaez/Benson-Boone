@@ -71,18 +71,56 @@ footer {
   grid-area: tickets;
 }
 .index-main .tickets .table-container {
+  background-color: #e2e3e5;
   width: 100%;
   overflow-x: auto;
+  border-radius: 7px;
+  padding: 7px;
 }
 
 .merch-main {
   grid-area: Main;
   text-align: center;
 }
+.merch-main .button, .merch-main .button-inactive {
+  background-color: #44575f;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 7px;
+}
+.merch-main .button:hover, .merch-main .button-inactive:hover {
+  transform: translateY(1px);
+  box-shadow: 0 0 0 2px #6a8794;
+}
+.merch-main .button-inactive {
+  background-color: grey;
+  pointer-events: none;
+  cursor: default;
+}
+.merch-main .button-inactive::after {
+  content: " (Sin stock)";
+}
 
 .musica-main {
   grid-area: Main;
   text-align: center;
+}
+
+.noticias-main {
+  grid-area: Main;
+  text-align: center;
+}
+.noticias-main .button, .noticias-main .merch-main .button-inactive, .merch-main .noticias-main .button-inactive {
+  background-color: #44575f;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 7px;
+}
+.noticias-main .button:hover, .noticias-main .merch-main .button-inactive:hover, .merch-main .noticias-main .button-inactive:hover {
+  transform: translateY(1px);
+  box-shadow: 0 0 0 2px #6a8794;
 }
 
 /*# sourceMappingURL=style.css.map */

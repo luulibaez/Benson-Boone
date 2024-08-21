@@ -14,8 +14,10 @@
 	.tickets{ 
 		grid-area: tickets; 
 		.table-container {
+			background-color: #e2e3e5;
 			width: 100%;
 			overflow-x: auto;
+			@include border-radius(7px);
 		}
 	}
 }

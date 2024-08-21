@@ -1,4 +1,4 @@
-.merch-main{
+.noticias-main{
 	grid-area: Main;
 	text-align: center;
 	.button{
@@ -10,14 +10,5 @@
 	.button:hover{
 		transform: translateY(1px);
 		box-shadow: 0 0 0 2px #6a8794;
-	}
-	.button-inactive{
-		@extend .button;
-		background-color: grey;
-		pointer-events: none;
-		cursor: default;
-	}
-	.button-inactive::after{
-		content: " (Sin stock)";
 	}
 }
