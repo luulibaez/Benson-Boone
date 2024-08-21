@@ -1,104 +1,88 @@
-/* Estilos generales */
-
-@font-face{
-    font-family: "PlayfairDisplay-Medium.ttf";
-    src: url(../fonts/PlayfairDisplay-Medium.ttf);
+@font-face {
+  font-family: "PlayfairDisplay-Medium.ttf";
+  src: url(../fonts/PlayfairDisplay-Medium.ttf);
 }
-
-@media only screen and (max-width: 319px){
-    body > *:not(#no-disponible){
-        display: none !important;
-    }
-    #no-disponible{
-        display: block !important;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #fff;
-        text-align: center;
-        padding-top: 50%;
-        font-size: 18px;
-    }
-}
-
-html{
+@media only screen and (max-width: 319px) {
+  body > *:not(#no-disponible) {
+    display: none !important;
+  }
+  #no-disponible {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-}
-
-body{
-	height: auto;
-	min-height: 100vh;
-    margin: 0%;
-	font-family: "PlayfairDisplay-Medium.ttf";
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr auto 0.3fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-		"Header Header Header"
-		"Main Main Main"
-		"Footer Footer Footer";
-}
-
-header{ 
-	grid-area: Header;
-	background-color: #44575f;
-}
-
-main{
-	background: #e2d9c1;
-    flex: 1 0 auto;
-	padding: 3% 5% 5% 5%;
-}
-
-footer{
-	grid-area: Footer;
-    background-color: #44575f;
-    color: white;
+    height: 100%;
+    background-color: #fff;
     text-align: center;
+    padding-top: 50%;
+    font-size: 18px;
+  }
+}
+html {
+  width: 100%;
+  height: auto;
 }
 
-/* HOME */
-
-.index-main{ 
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr auto;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-		"portada portada portada"
-		"tickets tickets tickets";
-	grid-area: Main;
+body {
+  height: auto;
+  min-height: 100vh;
+  margin: 0%;
+  font-family: "PlayfairDisplay-Medium.ttf";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr auto 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Header Header Header" "Main Main Main" "Footer Footer Footer";
+}
+body main {
+  background: #e2d9c1;
+  flex: 1 0 auto;
+  padding: 3% 5% 5% 5%;
 }
 
-.portada{ 
-	grid-area: portada;
+header {
+  grid-area: Header;
+  background-color: #44575f;
 }
 
-.tickets{ 
-	grid-area: tickets; 
+footer {
+  grid-area: Footer;
+  background-color: #44575f;
+  color: white;
+  text-align: center;
 }
 
-.table-container {
-	width: 100%;
-	overflow-x: auto;
+/* MAINS */
+.index-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "portada portada portada" "tickets tickets tickets";
+  grid-area: Main;
+}
+.index-main .portada {
+  grid-area: portada;
+}
+.index-main .tickets {
+  grid-area: tickets;
+}
+.index-main .tickets .table-container {
+  width: 100%;
+  overflow-x: auto;
 }
 
-/* MERCH */
-
-.merch-main{
-	grid-area: Main;
-	text-align: center;
+.merch-main {
+  grid-area: Main;
+  text-align: center;
 }
 
-/*MUSICA*/
-
-.musica-main{
-	grid-area: Main;
-	text-align: center;
+.musica-main {
+  grid-area: Main;
+  text-align: center;
 }
+
+/*# sourceMappingURL=style.css.map */

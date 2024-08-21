@@ -1,0 +1,26 @@
+.index-main{ 
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr auto;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"portada portada portada"
+		"tickets tickets tickets";
+	grid-area: Main;
+	.portada{ 
+		grid-area: portada;
+	}
+	.tickets{ 
+		grid-area: tickets; 
+		.table-container {
+			width: 100%;
+			overflow-x: auto;
+		}
+	}
+}
+
+
+
+
+
