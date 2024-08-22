@@ -2,23 +2,6 @@
   font-family: "PlayfairDisplay-Medium.ttf";
   src: url(../fonts/PlayfairDisplay-Medium.ttf);
 }
-@media only screen and (max-width: 319px) {
-  body > *:not(#no-disponible) {
-    display: none !important;
-  }
-  #no-disponible {
-    display: block !important;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    text-align: center;
-    padding-top: 50%;
-    font-size: 18px;
-  }
-}
 html {
   width: 100%;
   height: auto;
@@ -55,6 +38,30 @@ footer {
 }
 
 /* MAINS */
+/*.navbar {
+	padding: 1rem 0;
+  }
+
+  .navbar-nav {
+	gap: 1rem;
+  }
+
+  .nav-link {
+	font-size: 1.2rem;
+	font-weight: 500;
+	text-transform:initial;
+	transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+	color: #007bff;
+  }
+
+  @media (max-width: 991px) {
+	.navbar-nav {
+	  text-align: center;
+	}
+  }*/
 .index-main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -69,6 +76,8 @@ footer {
 }
 .index-main .tickets {
   grid-area: tickets;
+  animation: bounce;
+  animation-duration: 3s;
 }
 .index-main .tickets .table-container {
   background-color: #e2e3e5;
@@ -76,6 +85,44 @@ footer {
   overflow-x: auto;
   border-radius: 7px;
   padding: 7px;
+}
+
+.botones {
+  /*.boton4 {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #318aac;
+  border: 2px solid;
+  border-color: #318aac;
+  position: relative;
+  }
+  .boton4:hover {
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+  }*/
+}
+.botones .separar {
+  padding: 3%;
+  display: inline-block;
+  cursor: pointer;
+}
+.botones .boton3 {
+  color: #7b564c !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid;
+  border-color: #7b564c;
+  transition: all 1s ease;
+  position: relative;
+}
+.botones .boton3:hover {
+  background: #af7868;
+  color: #fff !important;
 }
 
 .merch-main {
@@ -121,6 +168,51 @@ footer {
 .noticias-main .button:hover, .noticias-main .merch-main .button-inactive:hover, .merch-main .noticias-main .button-inactive:hover {
   transform: translateY(1px);
   box-shadow: 0 0 0 2px #6a8794;
+}
+
+.biografia-main {
+  display: grid;
+  grid-template-columns: 0.3fr auto 0.3fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "biografia biografia carrousel" "biografia biografia carrousel";
+  grid-area: Main;
+}
+.biografia-main .biografia {
+  grid-area: biografia;
+}
+.biografia-main .container {
+  grid-area: carrousel;
+}
+.biografia-main .container img {
+  height: 50vh;
+  margin: auto;
+  display: block;
+}
+
+/* MEDIAS */
+@media only screen and (max-width: 319px) {
+  body > *:not(#no-disponible) {
+    display: none !important;
+  }
+  #no-disponible {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 50%;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .biografia-main {
+    grid-template-areas: "biografia biografia biografia" "carrousel carrousel carrousel";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

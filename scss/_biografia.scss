@@ -1,0 +1,22 @@
+.biografia-main{ 
+	display: grid;
+	grid-template-columns: 0.3fr auto 0.3fr;
+	grid-template-rows: 0.5fr 0.5fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"biografia biografia carrousel"
+		"biografia biografia carrousel";
+	grid-area: Main;
+	.biografia{ 
+		grid-area: biografia;
+	}
+	.container{
+		grid-area: carrousel;
+		img{
+			height: 50vh;
+			margin: auto;
+			display: block;
+		}
+	}
+}
