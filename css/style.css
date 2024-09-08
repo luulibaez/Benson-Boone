@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  padding: 0px !important;
   height: auto;
   min-height: 100vh;
   margin: 0%;
@@ -38,30 +39,6 @@ footer {
 }
 
 /* MAINS */
-/*.navbar {
-	padding: 1rem 0;
-  }
-
-  .navbar-nav {
-	gap: 1rem;
-  }
-
-  .nav-link {
-	font-size: 1.2rem;
-	font-weight: 500;
-	text-transform:initial;
-	transition: color 0.3s ease;
-  }
-
-  .nav-link:hover {
-	color: #007bff;
-  }
-
-  @media (max-width: 991px) {
-	.navbar-nav {
-	  text-align: center;
-	}
-  }*/
 .index-main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -86,24 +63,22 @@ footer {
   border-radius: 7px;
   padding: 7px;
 }
-
-.botones .separar {
-  padding: 3%;
+.index-main .tickets .table-container .botones .separar {
   display: inline-block;
   cursor: pointer;
 }
-.botones .boton3 {
+.index-main .tickets .table-container .botones .boton3 {
   color: #7b564c !important;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  padding: 0.5em 1.2em;
+  padding: 0.3em 0.8em;
   background: rgba(0, 0, 0, 0);
   border: 2px solid;
   border-color: #7b564c;
   transition: all 1s ease;
   position: relative;
 }
-.botones .boton3:hover {
+.index-main .tickets .table-container .botones .boton3:hover {
   background: #af7868;
   color: #fff !important;
 }
@@ -112,24 +87,16 @@ footer {
   grid-area: Main;
   text-align: center;
 }
-.merch-main .button, .merch-main .button-inactive {
+.merch-main .button {
   background-color: #44575f;
   color: white;
   text-decoration: none;
   border-radius: 7px;
   padding: 7px;
 }
-.merch-main .button:hover, .merch-main .button-inactive:hover {
+.merch-main .button:hover {
   transform: translateY(1px);
   box-shadow: 0 0 0 2px #6a8794;
-}
-.merch-main .button-inactive {
-  background-color: grey;
-  pointer-events: none;
-  cursor: default;
-}
-.merch-main .button-inactive::after {
-  content: " (Sin stock)";
 }
 
 .musica-main {
@@ -141,14 +108,14 @@ footer {
   grid-area: Main;
   text-align: center;
 }
-.noticias-main .button, .noticias-main .merch-main .button-inactive, .merch-main .noticias-main .button-inactive {
+.noticias-main .button {
   background-color: #44575f;
   color: white;
   text-decoration: none;
   border-radius: 7px;
   padding: 7px;
 }
-.noticias-main .button:hover, .noticias-main .merch-main .button-inactive:hover, .merch-main .noticias-main .button-inactive:hover {
+.noticias-main .button:hover {
   transform: translateY(1px);
   box-shadow: 0 0 0 2px #6a8794;
 }

@@ -2,8 +2,8 @@ $bg-green: #44575f;
 $bg-claro: #e2d9c1;
 
 @font-face{
-    font-family: "PlayfairDisplay-Medium.ttf";
-    src: url(../fonts/PlayfairDisplay-Medium.ttf);
+	font-family: "PlayfairDisplay-Medium.ttf";
+	src: url(../fonts/PlayfairDisplay-Medium.ttf);
 }
 
 @mixin border-radius($radius){
